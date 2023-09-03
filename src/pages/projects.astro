@@ -1,0 +1,188 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+const PROJECTS = [
+  {
+    imageUrl: "/projects/1.png",
+    url: "https://powerchap.co/",
+    name: "Powerchap",
+  },
+  {
+    imageUrl: "/projects/2.png",
+    url: "https://social-media-devnazir.vercel.app/dashboard",
+    name: "SociaBord",
+  },
+  {
+    imageUrl: "/projects/3.png",
+    url: "https://chatbot-devnazir.vercel.app/dashboard",
+    name: "ChatBot Dashboard",
+  },
+  {
+    imageUrl: "/projects/4.png",
+    url: "https://chatbot-devnazir.vercel.app",
+    name: "ChatBot",
+  },
+  {
+    imageUrl: "/projects/5.png",
+    url: "https://febelvn-devnazir.vercel.app/",
+    name: "Febelvn",
+  },
+  {
+    imageUrl: "/projects/6.png",
+    url: "https://ngo-devnazir.vercel.app/",
+    name: "NGO Eyes",
+  },
+  {
+    imageUrl: "/projects/7.png",
+    url: "https://devnazir.github.io/sage/",
+    name: "Sage",
+  },
+  {
+    imageUrl: "/projects/8.png",
+    url: "https://devnazir.github.io/movietrailer/",
+    name: "Movie Trailer",
+  },
+  {
+    imageUrl: "/projects/9.png",
+    url: "https://devnazir.github.io/mainan/",
+    name: "Mainan",
+  },
+  {
+    imageUrl: "/projects/10.png",
+    url: "https://devnazir.github.io/kelas-io/",
+    name: "Kelas.io",
+  },
+  {
+    imageUrl: "/projects/11.png",
+    url: "https://www.starbimbel.com/",
+    name: "Star Bimbel",
+  },
+];
+
+const OTHER_PROJECTS = [
+  {
+    url: "https://github.com/devnazir/api-lk21",
+    name: "API LK21",
+    description: "API to get movies data from LK21",
+  },
+  {
+    url: "https://github.com/devnazir/api-filmapik",
+    name: "API Filmapik",
+    description: "API to get movies data from Filmapik",
+  },
+  {
+    url: "https://github.com/devnazir/shopeebot-dn",
+    name: "Shopee Bot",
+    description:
+      "Shopee Bot using puppeteer to automate checkout, idk if it still works or not",
+  },
+  {
+    url: "https://github.com/devnazir/yt-downloader",
+    name: "Youtube Downloader",
+    description: "Youtube Downloader is a web app to download youtube video",
+  },
+  {
+    url: "https://github.com/devnazir/2d-array-sankey",
+    name: "2D Array Sankey",
+    description:
+      "2D Array Sankey is a data structure 2d array to make sankey diagram using flexbox",
+  },
+  {
+    url: "https://github.com/devnazir/loading-indicator",
+    name: "Loading Indicator",
+    description:
+      "Loading Indicator is a web component to show loading indicator at the top of the page when the page is scrolled",
+  },
+];
+---
+
+<Layout title="devnazir - Projects" transition:animate="none">
+  <h1 class="text-3xl">Projects</h1>
+  <div class="mt-2 flex justify-between">
+    <span class="block text-sm">
+      Some projects that I have worked on, it was from client and personal
+    </span>
+  </div>
+
+  <div class="grid grid-cols-3 gap-4 mt-4">
+    {
+      PROJECTS.map((project) => {
+        return (
+          <a href={project.url} target="_blank" rel="noopener noreferrer">
+            <div class="rounded-lg overflow-hidden relative cursor-pointer">
+              <Image
+                src={project.imageUrl}
+                alt={project.url}
+                width="100"
+                height="100"
+                class="w-full h-full"
+              />
+              <div class="absolute bottom-0 left-0 right-0 p-4 bg-gray-200  opacity-75">
+                {project.name}
+              </div>
+            </div>
+          </a>
+        );
+      })
+    }
+  </div>
+
+  <div class="mt-8">
+    <h2 class="text-2xl">Other Projects</h2>
+    <div class="mt-1 flex justify-between">
+      <span class="block text-sm">
+        Some random projects that I have created
+      </span>
+    </div>
+
+    <div
+      class="mt-4 grid grid-cols-4 auto-rows-[200px] relative justify-items-center items-center"
+    >
+      <div
+        class="absolute inset-0 grid grid-cols-4 grid-auto-rows-[200px] z-[-1]"
+      >
+        {
+          OTHER_PROJECTS.map((_, index, array) => {
+            const lastColumn = index % 4 === 3;
+            const lastRowIndex = Math.floor(array.length / 4);
+            const lastRow = Math.floor(index / 4) === lastRowIndex;
+
+            return (
+              <div
+                class:list={[
+                  `border-gray-300 border-dotted p-4 border-b border-r last:border-r-0`,
+                  {
+                    "!border-r-0": lastColumn,
+                    "!border-b-0": lastRow,
+                  },
+                ]}
+              />
+            );
+          })
+        }
+      </div>
+      {
+        OTHER_PROJECTS.map((project) => {
+          return (
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full  border-gray-300  p-4"
+            >
+              <div class="cursor-pointer flex flex-col w-full break-words">
+                <span class="block">{project.name}</span>
+
+                <p class="text-xs italic text-gray-500 break-words block w-auto">
+                  {project.description}
+                </p>
+              </div>
+            </a>
+          );
+        })
+      }
+      <div></div>
+    </div>
+  </div>
+</Layout>
