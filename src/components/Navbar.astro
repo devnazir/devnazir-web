@@ -1,7 +1,5 @@
 ---
 import NavbarLinks from "./NavbarLinks";
-const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname.slice(1);
 ---
 
 <nav
@@ -13,5 +11,5 @@ const currentPath = pathname.slice(1);
     <span class="">{" />"}</span>
   </a>
 
-  <NavbarLinks currentPath={currentPath} client:load />
+  <NavbarLinks client:only />
 </nav>

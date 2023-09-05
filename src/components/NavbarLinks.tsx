@@ -3,8 +3,8 @@ import { MENUS } from "../constants";
 import Bars from "../icons/Bars";
 import classNames from "../utils";
 
-const NavbarLinks = (props: { currentPath: string }) => {
-  const { currentPath } = props;
+const NavbarLinks = () => {
+  const currentPath = window.location.pathname.slice(1);
   const [showLinks, setShowLinks] = useState(false);
 
   const handleClickBars = () => {
