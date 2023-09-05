@@ -98,14 +98,14 @@ const OTHER_PROJECTS = [
 ---
 
 <Layout title="devnazir - Projects" transition:animate="none">
-  <h1 class="text-3xl">Projects</h1>
+  <h1 class="md:text-3xl text-xl">Projects</h1>
   <div class="mt-2 flex justify-between">
-    <span class="block text-sm">
+    <span class="block md:text-sm text-xs">
       Some projects that I have worked on, it was from client and personal
     </span>
   </div>
 
-  <div class="grid grid-cols-3 gap-4 mt-4">
+  <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-4">
     {
       PROJECTS.map((project) => {
         return (
@@ -129,18 +129,18 @@ const OTHER_PROJECTS = [
   </div>
 
   <div class="mt-8">
-    <h2 class="text-2xl">Other Projects</h2>
+    <h2 class="md:text-2xl text-xl">Other Projects</h2>
     <div class="mt-1 flex justify-between">
-      <span class="block text-sm">
+      <span class="block text-xs md:text-sm">
         Some random projects that I have created
       </span>
     </div>
 
     <div
-      class="mt-4 grid grid-cols-4 auto-rows-[200px] relative justify-items-center items-center"
+      class="mt-4 grid md:grid-cols-2 lg:grid-cols-4 md:auto-rows-[200px] relative justify-items-center items-center"
     >
       <div
-        class="absolute inset-0 grid grid-cols-4 grid-auto-rows-[200px] z-[-1]"
+        class="absolute inset-0 grid md:grid-cols-2 lg:grid-cols-4 md:auto-rows-[200px] z-[-1]"
       >
         {
           OTHER_PROJECTS.map((_, index, array) => {
@@ -151,10 +151,10 @@ const OTHER_PROJECTS = [
             return (
               <div
                 class:list={[
-                  `border-gray-300 border-dotted p-4 border-b border-r last:border-r-0`,
+                  `lg:border-gray-300 lg:border-dotted p-4 lg:border-b lg:border-r last:lg:border-r-0`,
                   {
-                    "!border-r-0": lastColumn,
-                    "!border-b-0": lastRow,
+                    "lg:!border-r-0": lastColumn,
+                    "lg:!border-b-0": lastRow,
                   },
                 ]}
               />
@@ -169,7 +169,7 @@ const OTHER_PROJECTS = [
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              class="w-full  border-gray-300  p-4"
+              class="w-full  border-gray-300 lg:p-4 py-2"
             >
               <div class="cursor-pointer flex flex-col w-full break-words">
                 <span class="block">{project.name}</span>
