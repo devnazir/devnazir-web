@@ -22,7 +22,7 @@ const NavbarLinks = (props: { currentPath: string }) => {
         )}
       >
         {MENUS.map((menu) => (
-          <li className="inline-block text-xs md:text-sm">
+          <li className="inline-block text-xs md:text-sm" key={menu.name}>
             <a
               className={classNames(
                 "text-gray-500 font-medium hover:text-purple-500",
