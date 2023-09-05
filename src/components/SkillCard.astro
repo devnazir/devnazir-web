@@ -1,0 +1,19 @@
+---
+interface Props {
+  src: string;
+  name: string;
+}
+
+const { src, name } = Astro.props;
+---
+
+<div
+  class="bg-white shadow-md p-6 box-border flex flex-col items-center justify-center"
+>
+  <div class="mb-3">
+    <img class="md:w-24 w-16" src={src} alt={name} />
+  </div>
+  <div class="flex flex-col items-center">
+    <span class="block text-base md:text-xl mb-2">{name}</span>
+  </div>
+</div>
