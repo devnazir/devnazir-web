@@ -25,9 +25,9 @@ const NavbarLinks = () => {
           <li className="inline-block text-xs md:text-sm" key={menu.name}>
             <a
               className={classNames(
-                "text-gray-500 font-medium hover:text-purple-500",
+                "text-gray-500 font-medium hover:text-blue-500",
                 {
-                  "text-purple-500": currentPath === menu.path.slice(1),
+                  "text-blue-500": currentPath === menu.path.slice(1),
                 },
               )}
               href={menu.path}

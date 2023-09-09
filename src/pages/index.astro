@@ -2,4 +2,29 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="devnazir"></Layout>
+<Layout title="devnazir">
+  <div class="md:h-[calc(100vh_-_355px)] h-[calc(100vh_-_300px)]">
+    <div class="flex h-full flex-col justify-center gap-4">
+      <h1 class="text-5xl font-thin" transition:name="heading-projects">Hello 
+        <span class="text-blue-500 inline-block hover:animate-[shake_1s_ease-in-out_infinite_alternate] animate-shake cursor-default">👋</span>
+      </h1>
+      <p class="font-light mt-4 text-xl md:text-2xl leading-normal md:w-1/2">
+        I'm <strong class="text-3xl">Nazir Bahrul Ulum</strong>, a front-end web
+        engineer based in Indonesia. I'm a self-taught engineer who loves to
+        build things for the web.
+      </p>
+
+      <div class="mt-4 flex gap-2 flex-col">
+        <span>Get in touch <span class="text-blue-500">👇</span></span>
+        <a
+          href="mailto:nazirbachrululum@gmail.com"
+          class="text-blue-500 w-max hover:text-blue-600 bg-blue-100 hover:bg-blue-200 px-2 py-1 rounded-md"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          nazirbachrululum@gmail.com
+        </a>
+      </span>
+    </div>
+  </div>
+</Layout>

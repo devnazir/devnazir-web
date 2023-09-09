@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
+import Circle from "../components/Circle";
 
 interface Props {
   title: string;
@@ -11,7 +12,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" transition:animate="none">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -24,11 +25,12 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body>
     <div class="max-w-[1440px] mx-auto">
-      <Navbar />
-      <main class="md:px-8 md:py-6 p-4" transition:animate="fade">
+      <Navbar transition:persist />
+      <main class="md:px-8 md:py-6 p-4">
         <slot />
       </main>
 
@@ -37,8 +39,7 @@ const { title } = Astro.props;
       >
       </div>
     </div>
+    <Circle client:only/>
     <Footer />
   </body>
 </html>
-
-<ViewTransitions />

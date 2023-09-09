@@ -8,7 +8,25 @@ module.exports = {
     fontFamily: {
       sans: ["Poppins", ...defaultTheme.fontFamily.sans],
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        shake: {
+          "0%": { transform: "rotate(-20deg)" },
+          "25%": { transform: "rotate(20deg)" },
+          "50%": { transform: "rotate(-20deg)" },
+          "75%": { transform: "rotate(20deg)" },
+          "100%": { transform: "rotate(0deg)" },
+        },
+      },
+      animation: {
+        shake: "shake .5s ease-in-out",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      animation: ["hover", "focus"],
+    },
   },
   plugins: [],
 };

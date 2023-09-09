@@ -5,7 +5,7 @@ import SkillCard from "../components/SkillCard.astro";
 ---
 
 <Layout title="devnazir - Skills">
-  <h1 class="md:text-3xl text-xl">Skills</h1>
+  <h1 class="md:text-3xl text-xl" transition:name="heading-skills">Skills</h1>
   <div class="mt-2 flex justify-between">
     <span class="block md:text-sm text-xs">
       List of skills I have acquired over the years, and never stop learning.
@@ -14,6 +14,7 @@ import SkillCard from "../components/SkillCard.astro";
 
   <div
     class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-4 gap-4"
+    transition:name="heading-projects"
   >
     {
       SKILLS.map((skill) => {
