@@ -140,18 +140,7 @@ export const EXPERIENCES = [
     employeeType: "Full Time",
     company: "Dealls (YC W22)",
     description: `
-      - Work closely with designers to ensure visual design and implementation match.
-      - Collaborate with QA team to guarantee high-quality product delivery.
-      - Interact with product management to gather requirements and make recommendations.
-      - Conduct analysis and identify opportunities for improvement.
-      - Participate in code review to maintain high coding standards.
-      - Use Jira for project tracking and management.
-      - Utilize Next.js framework for building fast and scalable React applications.
-      - Implement projects using TypeScript for static typing and improved code maintenance.
-      - Engage in bug fixing and resolve technical issues in a timely manner.
-      - Conduct research and stay up-to-date on the latest frontend technologies and tools.
-      - Refactor existing code to improve performance, maintainability, and scalability.
-      - Adhere to best practices and coding standards to ensure code quality and readability.
+    In my role, I work closely with designers to ensure that the visual design aligns seamlessly with the implementation of our projects. Collaboration with our QA team is essential to guarantee the delivery of high-quality products. Additionally, I regularly interact with our product management team to gather requirements and provide recommendations based on my analysis. Part of my responsibilities includes participating in code reviews to maintain our coding standards at a high level. For project tracking and management, we rely on Jira as our primary tool. In the development process, I utilize the Next.js framework to create fast and scalable React applications, and I implement projects using TypeScript to enhance static typing and code maintenance. When technical issues arise, I am proactive in engaging in bug fixing and resolving them promptly to minimize disruption. To stay current with the ever-evolving landscape of frontend technologies and tools, I conduct ongoing research. Furthermore, I am committed to refactoring existing code to improve its performance, maintainability, and scalability. Lastly, I consistently adhere to best practices and coding standards to ensure that our code maintains a high level of quality and readability.
     `,
     skills: [
       "React JS",
@@ -170,10 +159,7 @@ export const EXPERIENCES = [
     employeeType: "Freelance",
     company: "Potatos Studio",
     description: `
-      - Developed and maintained web applications for a variety of clients using HTML, CSS, and JavaScript
-      - Collaborated with clients to determine project goals and deliverables
-      - Implemented visually appealing and user-friendly interfaces
-      - Stayed up-to-date with industry best practices and technologies to continuously improve development processes
+      I've developed and maintained web applications using HTML, CSS, and JavaScript for diverse clients. Collaborating closely with clients, I ensure project goals and deliverables are met while creating visually appealing and user-friendly interfaces. Staying updated with industry best practices, I continuously improve development processes.
     `,
     skills: ["HTML", "CSS", "JavaScript", "React JS", "Tailwind CSS"],
   },
@@ -184,9 +170,7 @@ export const EXPERIENCES = [
     employeeType: "Contract",
     company: "ChicodeFive Development",
     description: `
-      - Implemented UI designs using React JS, HTML, and CSS
-      - Collaborated with backend developers to integrate APIs
-      - Collaborated with designers to achieve pixel-perfect UI
+      I've implemented UI designs using React JS, HTML, and CSS, working closely with backend developers to seamlessly integrate APIs. My collaboration with designers ensured a pixel-perfect UI, resulting in a polished user experience.
     `,
     skills: ["HTML", "CSS", "JavaScript", "React JS", "Tailwind CSS"],
   },
