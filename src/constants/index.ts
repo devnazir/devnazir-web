@@ -17,60 +17,74 @@ export const SKILLS = [
   {
     name: "HTML",
     src: "/icons/html.png",
+    yearOfExperienceLabel: "3 years of professional experience",
   },
   {
     name: "CSS",
     src: "/icons/css.png",
+    yearOfExperienceLabel: "3 years of professional experience",
   },
   {
     name: "SASS/SCSS",
     src: "/icons/sass.png",
+    yearOfExperienceLabel: "3 years of professional experience",
   },
   {
     name: "Tailwind CSS",
     src: "/icons/tailwind.svg",
+    yearOfExperienceLabel: "2 years of professional experience",
   },
   {
     name: "Styled Components",
     src: "/icons/styled-com.svg",
+    yearOfExperienceLabel: "2 years of professional experience",
   },
   {
     name: "Ant Design",
     src: "/icons/ant-design.svg",
+    yearOfExperienceLabel: "1 year of professional experience",
   },
   {
     name: "JavaScript",
     src: "/icons/js.png",
+    yearOfExperienceLabel: "3 years of professional experience",
   },
   {
     name: "Node.js",
     src: "/icons/nodejs.svg",
+    yearOfExperienceLabel: "1 year of professional experience",
   },
 
   {
     name: "TypeScript",
     src: "/icons/ts.svg",
+    yearOfExperienceLabel: "1 year of professional experience",
   },
 
   {
     name: "React JS",
     src: "/icons/react.png",
+    yearOfExperienceLabel: "2 years of professional experience",
   },
   {
     name: "Next JS",
     src: "/icons/next.svg",
+    yearOfExperienceLabel: "2 years of professional experience",
   },
   {
     name: "Astro",
     src: "/icons/astro.png",
+    yearOfExperienceLabel: "<1 year of professional experience",
   },
   {
     name: "Apollo GraphQL",
     src: "/icons/apollo-graphql.svg",
+    yearOfExperienceLabel: "<1 year of professional experience",
   },
   {
     name: "Jotai",
     src: "/icons/jotai-mascot.png",
+    yearOfExperienceLabel: "<1 year of professional experience",
   },
 ] as const;
 

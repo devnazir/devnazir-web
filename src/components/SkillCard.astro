@@ -2,9 +2,10 @@
 interface Props {
   src: string;
   name: string;
+  yearOfExperienceLabel: string;
 }
 
-const { src, name } = Astro.props;
+const { src, name, yearOfExperienceLabel } = Astro.props;
 ---
 
 <div
@@ -15,5 +16,6 @@ const { src, name } = Astro.props;
   </div>
   <div class="flex flex-col items-center">
     <span class="block text-base md:text-xl mb-2">{name}</span>
+    <span class="block text-xs">{yearOfExperienceLabel}</span>
   </div>
 </div>
