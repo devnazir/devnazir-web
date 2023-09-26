@@ -1,0 +1,40 @@
+---
+import { GetStaticPaths } from "astro";
+import { Image } from "astro:assets";
+import { PROJECTS } from "../../constants";
+import Layout from "../../layouts/Layout.astro";
+
+export const getStaticPaths = (() => {
+  const paths = PROJECTS.map((project) => {
+    return {
+      params: {
+        projectId: project.id,
+      },
+    };
+  });
+
+  return paths;
+}) satisfies GetStaticPaths;
+
+const { projectId } = Astro.params;
+const project = PROJECTS.find((project) => project.id === projectId)!;
+---
+
+<Layout title={`devnazir - ${project.name}`}>
+  <div class="grid grid-cols-2">
+    <div class="rounded-lg overflow-hidden relative">
+      <div class="flex items-center mb-4 gap-2">
+        <a class="block text-2xl cursor-pointer" href="/projects/">{"<"}</a>
+        <h1 class="text-2xl">{project.name}</h1>
+      </div>
+      <Image
+        src={project.imageUrl}
+        alt={project.url}
+        width="600"
+        height="500"
+        transition:name={`thumbnail-project-${projectId}`}
+        class="block w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</Layout>

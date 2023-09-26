@@ -93,56 +93,67 @@ export const PROJECTS = [
     imageUrl: "/projects/1.png",
     url: "https://powerchap.co/",
     name: "Powerchap",
+    id: "powerchap",
   },
   {
     imageUrl: "/projects/2.png",
     url: "https://social-media-devnazir.vercel.app/dashboard",
     name: "SociaBord",
+    id: "sociabord",
   },
   {
     imageUrl: "/projects/3.png",
     url: "https://chatbot-devnazir.vercel.app/dashboard",
     name: "ChatBot Dashboard",
+    id: "chatbot-dashboard",
   },
   {
     imageUrl: "/projects/4.png",
     url: "https://chatbot-devnazir.vercel.app",
     name: "ChatBot",
+    id: "chatbot-landing",
   },
   {
     imageUrl: "/projects/5.png",
     url: "https://febelvn-devnazir.vercel.app/",
     name: "Febelvn",
+    id: "febelvn",
   },
   {
     imageUrl: "/projects/6.png",
     url: "https://ngo-devnazir.vercel.app/",
     name: "NGO Eyes",
+    id: "ngo-eyes",
   },
   {
     imageUrl: "/projects/7.png",
     url: "https://devnazir.github.io/sage/",
     name: "Sage",
+    id: "sage",
   },
   {
     imageUrl: "/projects/8.png",
     url: "https://devnazir.github.io/movietrailer/",
     name: "Movie Trailer",
+    id: "movie-trailer",
   },
   {
     imageUrl: "/projects/9.png",
     url: "https://devnazir.github.io/mainan/",
     name: "Mainan",
+    id: "mainan",
   },
   {
     imageUrl: "/projects/10.png",
     url: "https://devnazir.github.io/kelas-io/",
     name: "Kelas.io",
+    id: "kelas-io",
   },
   {
     imageUrl: "/projects/11.png",
     url: "https://www.starbimbel.com/",
     name: "Star Bimbel",
+    id: "star-bimbel",
   },
 ] as const;
 

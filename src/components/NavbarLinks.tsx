@@ -27,7 +27,7 @@ const NavbarLinks = () => {
               className={classNames(
                 "text-gray-500 font-medium hover:text-blue-500",
                 {
-                  "!text-blue-500": currentPath === menu.path.slice(1),
+                  "!text-blue-500": currentPath.startsWith(menu.path.slice(1)),
                 },
               )}
               href={menu.path}

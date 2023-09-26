@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+const { project } = Astro.props;
+---
+
+<a href={`/projects/${project.id}`}>
+  <div
+    class="rounded-lg overflow-hidden relative cursor-pointer"
+    transition:name={`thumbnail-project-${project.id}`}
+  >
+    <Image
+      src={project.imageUrl}
+      alt={project.url}
+      width="600"
+      height="600"
+      class="block w-full h-full"
+    />
+    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gray-200 opacity-75">
+      {project.name}
+    </div>
+  </div>
+</a>
