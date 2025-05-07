@@ -1,0 +1,39 @@
+---
+interface StackItem {
+  icon: string;
+  title: string;
+  subtitle: string;
+  url?: string;
+}
+
+const { stack } = Astro.props;
+---
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  {
+    stack.map((item: StackItem) => (
+      <a
+        href={item.url || '#'}
+        class="flex items-center gap-4 border-2 border-dashed border-gray-300 rounded-xl p-5 transition hover:shadow-md group"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src={item.icon}
+          alt={item.title + ' icon'}
+          class="w-12 h-12 object-contain rounded-lg"
+        />
+        <div>
+          <div class="font-semibold text-lg group-hover:underline">{item.title}</div>
+          <div class="text-gray-500 text-sm">{item.subtitle}</div>
+        </div>
+        <span class="ml-auto text-gray-400 group-hover:text-black">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-width="2" d="M7 17L17 7M17 7H7m10 0v10" />
+          </svg>
+        </span>
+      </a>
+    ))
+  }
+</div>
+

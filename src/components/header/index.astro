@@ -1,0 +1,47 @@
+---
+import { Meteors } from '@components/magicui/meteors';
+import { FlickeringGrid } from '@components/magicui/flickering-grid';
+import tailwindIcon from '@assets/tailwind.svg';
+import reactIcon from '@assets/react.svg';
+import nextIcon from '@assets/next.svg';
+import typescriptIcon from '@assets/typescript.svg';
+---
+
+<>
+  <header class="min-h-screen bg-white flex relative overflow-hidden rounded-2xl">
+    <Meteors client:load number={10} />
+    <h1 class="text-5xl text-black font-light m-auto text-center w-[60vw]">
+      Hello, I'm Nazir <img class="inline-block w-14 h-14" src={tailwindIcon.src} alt="tailwind" />
+      I bring ideas to life through clean and
+      <div class="inline-flex gap-2">
+        <img class="inline-block w-8 h-8" src={reactIcon.src} alt="react" />
+        <img class="inline-block w-8 h-8" src={nextIcon.src} alt="next" />
+        <img class="inline-block w-8 h-8" src={typescriptIcon.src} alt="typescript" />
+      </div> Interactive frontend development
+    </h1>
+    <div class="absolute bottom-0 left-0 right-0">
+      <div class="relative">
+        <div
+          class="absolute top-0 left-0 right-0 h-50 bg-gradient-to-b from-background to-transparent z-10"
+        >
+        </div>
+        <FlickeringGrid
+          gridGap={10}
+          squareSize={4}
+          maxOpacity={1}
+          height={200}
+          client:load
+          color="#3F3F37"
+        />
+      </div>
+    </div>
+  </header>
+  <div
+    class="fixed top-8 right-8 font-[Inter] z-50 bg-white shadow-xs rounded-md p-2 border border-[#E5E5E5] px-2 py-2"
+  >
+    <div class="flex items-center gap-2 font-light">
+      <span class="px-2 py-1 rounded-md text-sm hover:bg-gray-100 cursor-pointer">Resume</span>
+      <span class="px-2 py-1 rounded-md text-sm hover:bg-gray-100 cursor-pointer">Linkedin</span>
+    </div>
+  </div>
+</>

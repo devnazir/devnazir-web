@@ -1,0 +1,135 @@
+export const experiences = [
+  {
+    company: 'Dealls Jobs',
+    logo: 'https://assets-cdn.dealls.com/dcp/favicon.ico',
+    title: 'Frontend Engineer',
+    year: 'Mar 2022 - Present',
+    linkedin: 'https://www.linkedin.com/company/dealls/',
+  },
+  {
+    company: 'Potatos Studio',
+    logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQFSjjiyzekHxw/company-logo_200_200/company-logo_200_200/0/1637753322975/potatos_studio_logo?e=1752105600&v=beta&t=Z3id_ez_2VOmy5u8ivQ_IENJWW1l_y9XfDzTjQXjCVU',
+    title: 'Frontend Engineer',
+    year: 'May 2021 - Mar 2022',
+    linkedin: 'https://www.linkedin.com/company/potatos-studio/',
+  },
+  {
+    company: 'PowerChap',
+    logo: 'https://media.licdn.com/dms/image/v2/C560BAQF4lxh2H5Uv1w/company-logo_200_200/company-logo_200_200/0/1649761326106/powerchap_logo?e=1752105600&v=beta&t=TKpm3rWaUiE7XNLm9H27a6K4kuoaLhuMPol20b6AAzk',
+    title: 'Frontend Engineer',
+    year: 'Oct 2021 - Mar 2022',
+    linkedin: 'https://www.linkedin.com/company/powerchap/',
+  },
+  {
+    company: 'ChicodeFive Development',
+    logo: 'https://media.licdn.com/dms/image/v2/D560BAQHwvRXfSAAplw/company-logo_200_200/company-logo_200_200/0/1681272894242/chicodefive_logo?e=1752105600&v=beta&t=jnFgG0bwW9O4s8tQMUPuIEMU2b4skjuDCLIiA6Lhdl0',
+    title: 'ReactJS Developer',
+    year: 'May 2021 - Oct 2021',
+    linkedin: 'https://www.linkedin.com/company/chicodefive',
+  },
+];
+
+export const stack = [
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    title: 'JavaScript',
+    subtitle: 'Programming Language',
+    url: 'https://www.javascript.com/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    title: 'React',
+    subtitle: 'Frontend Framework',
+    url: 'https://react.dev/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+    title: 'Next.js',
+    subtitle: 'React Framework',
+    url: 'https://nextjs.org/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+    title: 'Node.js',
+    subtitle: 'Backend Runtime',
+    url: 'https://nodejs.org/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    title: 'TypeScript',
+    subtitle: 'Typed JavaScript',
+    url: 'https://www.typescriptlang.org/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
+    title: 'Tailwind CSS',
+    subtitle: 'Utility-first CSS',
+    url: 'https://tailwindcss.com/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg',
+    title: 'Astro',
+    subtitle: 'Static Site Builder',
+    url: 'https://astro.build/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+    title: 'Docker',
+    subtitle: 'Containerization',
+    url: 'https://www.docker.com/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg',
+    title: 'Golang',
+    subtitle: 'Programming Language',
+    url: 'https://go.dev/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+    title: 'MySQL',
+    subtitle: 'Relational Database',
+    url: 'https://www.mysql.com/',
+  },
+  {
+    icon: '/strapi.svg',
+    title: 'Strapi',
+    subtitle: 'Content Management System',
+    url: 'https://strapi.io/',
+  },
+  {
+    icon: 'https://github.com/pmndrs/jotai/blob/main/img/jotai-mascot.png?raw=true',
+    title: 'Jotai',
+    subtitle: 'State Management',
+    url: 'https://jotai.pmnd.rs/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/antdesign/antdesign-original.svg',
+    title: 'Ant Design',
+    subtitle: 'UI Library',
+    url: 'https://ant.design/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+    title: 'Git',
+    subtitle: 'Version Control',
+    url: 'https://git-scm.com/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+    title: 'GitHub',
+    subtitle: 'Version Control',
+    url: 'https://github.com/',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg',
+    title: 'GitHub Actions',
+    subtitle: 'CI/CD',
+    url: 'https://github.com/features/actions',
+  },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg',
+    title: 'Bash',
+    subtitle: 'Shell',
+    url: 'https://www.gnu.org/software/bash/',
+  },
+]; 
