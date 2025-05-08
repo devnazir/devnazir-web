@@ -1,0 +1,54 @@
+---
+year: '2021'
+company: 'ChicodeFive Development 🇮🇩'
+link: starbimbel.com
+title: 'Star Bimbel'
+imgSrc: '/star-bimbel.png'
+description: 'StarBimbel is a platform for online tutoring services'
+order: 8
+---
+
+import Section from '@components/common/section';
+import Stack from '@components/common/stack/index.astro';
+
+<Section title="Background">
+  <p>
+    StarBimbel is a platform for online tutoring services. I was hired to create a landing page and
+    a dashboard for their product. I was working with a team of 4 people.
+  </p>
+</Section>
+
+<Section title="Features">
+  <ul className="list-disc list-inside">
+    <li>Landing Page</li>
+    <li>Dashboard</li>
+    <li>Payment</li>
+    <li>Report</li>
+    <li>Admin</li>
+  </ul>
+</Section>
+
+<Section title="Tech Stack">
+  <Stack
+    stack={[
+      {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+        title: 'JavaScript',
+        subtitle: 'Programming Language',
+        url: 'https://www.javascript.com/',
+      },
+      {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+        title: 'React',
+        subtitle: 'Frontend Framework',
+        url: 'https://react.dev/',
+      },
+      {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
+        title: 'Tailwind CSS',
+        subtitle: 'Styling Library',
+        url: 'https://tailwindcss.com/',
+      },
+    ]}
+  />
+</Section>

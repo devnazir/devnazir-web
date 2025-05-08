@@ -1,0 +1,56 @@
+---
+year: '2021'
+company: 'India 🇮🇳'
+link: null
+title: 'Chatbot Landing'
+imgSrc: '/chatbot-landing.png'
+description: 'A landing page for a chatbot'
+order: 6
+---
+
+import Section from '@components/common/section';
+import Stack from '@components/common/stack/index.astro';
+
+<Section title="Background">
+  <p>
+    I got a client from India who wanted to create a landing page for their product. The product is
+    a chatbot.
+  </p>
+</Section>
+
+<Section title="Tech Stack">
+  <Stack
+    stack={[
+      {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+        title: 'JavaScript',
+        subtitle: 'Programming Language',
+        url: 'https://www.javascript.com/',
+      },
+      {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+        title: 'React',
+        subtitle: 'Frontend Framework',
+        url: 'https://react.dev/',
+      },
+      {
+        icon: 'https://avatars.githubusercontent.com/u/20658825?s=48&v=4',
+        title: 'Styled Components',
+        subtitle: 'Styling Library',
+        url: 'https://styled-components.com/',
+      },
+      {
+        icon: 'https://avatars.githubusercontent.com/u/37190687?s=48&v=4',
+        title: 'ApexCharts',
+        subtitle: 'Charting Library',
+        url: 'https://apexcharts.com/',
+      },
+    ]}
+  />
+</Section>
+
+<Section title="Demo URL">
+  <a href="http://chatbot-devnazir.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-md">View Demo</button>
+  </a>
+</Section>

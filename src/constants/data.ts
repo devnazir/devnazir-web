@@ -51,7 +51,7 @@ export const stack = [
   {
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
     title: 'Node.js',
-    subtitle: 'Backend Runtime',
+    subtitle: 'Runtime Environment',
     url: 'https://nodejs.org/',
   },
   {

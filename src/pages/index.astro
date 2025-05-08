@@ -1,24 +1,21 @@
 ---
-import '@styles/global.css';
-import Layout from '../layouts/Layout.astro';
+import Layout from '@layouts/Layout.astro';
 import Header from '@components/header/index.astro';
-import CardProject from '@components/card/project.astro';
 import Experience from '@components/experience/index.astro';
-import Stack from '@components/stack/index.astro';
+import Stack from '@components/common/stack/index.astro';
 import { experiences, stack } from '@constants/data';
-import Footer from '@components/footer/index.astro';
+import Footer from '@components/common/footer/index.astro';
+import { getCollection } from 'astro:content';
+import SeeMoreProjects from '@components/SeeMoreProjects';
+
+const projects = await getCollection('projects');
 ---
 
 <Layout>
   <Header />
   <section class="section">
     <span class="text-4xl font-light">Featured Projects</span>
-    <div class="grid grid-cols-2 gap-4 mt-15">
-      <CardProject imgSrc="https://picsum.photos/200/300" id="1" />
-      <CardProject imgSrc="https://picsum.photos/200/300" id="2" />
-      <CardProject imgSrc="https://picsum.photos/200/300" id="3" />
-      <CardProject imgSrc="https://picsum.photos/200/300" id="4" />
-    </div>
+    <SeeMoreProjects client:load projects={projects.sort((a, b) => a.data.order - b.data.order)} />
   </section>
   <section class="section">
     <span class="text-4xl font-light">Experience</span>

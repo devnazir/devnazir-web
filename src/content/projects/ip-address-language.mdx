@@ -1,0 +1,74 @@
+---
+year: '2024'
+company: 'Personal Project'
+link: null
+title: 'IP Address Language'
+imgSrc: '/ipl.png'
+description: 'Write code using only numbers and dots'
+order: 1
+---
+
+import Section from '@components/common/section';
+import Stack from '@components/common/stack/index.astro';
+import CodeBlock from '@components/common/codeblock/index.astro';
+
+<Section title="Background">
+  <p>
+    When I was learning Go, I challenged myself to make a programming language that could be written
+    using only numbers and dots. I wanted to see if I could make a programming language that was
+    easy to understand and fun to use. So, I made this.
+  </p>
+</Section>
+
+<Section title="Tech Stack">
+  <Stack
+    stack={[
+      {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg',
+        title: 'Go',
+        subtitle: 'Programming Language',
+        url: 'https://go.dev/',
+      },
+    ]}
+  />
+</Section>
+
+<Section title="Example Code">
+  <p class="mb-4">Here's an example of the code that can be written in this language:</p>
+  <CodeBlock>
+    {`
+    105.102 120 60 53 123
+      101.99.104.111 34 120 105.115 103.114.101.97.116.101.114 116.104.97.110 53 34
+    125 101.108.115.101 105.102 120 61.61 53 123
+      101.99.104.111 34 120 105.115 101.113.117.97.108 116.111 53 34
+    125 101.108.115.101 123
+      101.99.104.111 34 120 105.115 108.101.115.115 116.104.97.110 53 34
+    125
+  `}
+  </CodeBlock>
+
+  <p class="mb-4">
+    is translated to:
+  </p>
+  <CodeBlock>
+    {`
+    if x < 5 {
+        echo "x is greater than 5"
+    } else if x == 5 {
+        echo "x is equal to 5"
+    } else {
+        echo "x is less than 5"
+    }
+    `}
+  </CodeBlock>
+</Section>
+
+<Section title="Documentation">
+  <a
+    href="https://github.com/devnazir/ip-address-language"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-md">View Documentation</button>
+  </a>
+</Section>

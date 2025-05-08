@@ -1,0 +1,69 @@
+---
+import Footer from '@components/common/footer/index.astro';
+import Layout from '@layouts/Layout.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+const { id } = Astro.params;
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({ params: { id: project.id } }));
+}
+
+const project = await getEntry('projects', String(id));
+
+if (!project) {
+  throw new Error('Project not found');
+}
+
+const { Content } = await render(project);
+---
+
+<Layout>
+  <div
+    class="min-h-screen rounded-2xl bg-white flex flex-col items-center justify-start relative pt-20"
+  >
+    <div class="w-full flex items-center justify-start p-6 fixed top-0 left-0">
+      <a
+        href="/"
+        class="bg-black text-white rounded-full px-6 py-2 flex items-center gap-2 shadow hover:scale-95 transition-all"
+      >
+        <span class="text-lg">←</span> Back
+      </a>
+    </div>
+    {
+      project ? (
+        <div class="w-full max-w-5xl ">
+          <div class="flex flex-col items-center">
+            <div class="flex items-center gap-4 text-gray-700 text-lg mb-4">
+              <span>📅 {project.data.year}</span>
+              <span>👤 {project.data.company}</span>
+              {project.data.link && (
+                <a
+                  href={`https://${project.data.link}`}
+                  target="_blank"
+                  class="underline text-blue-600"
+                >
+                  {project.data.link}
+                </a>
+              )}
+            </div>
+            <h1 class="text-5xl font-light text-center mb-8">{project.data.title}</h1>
+            <img
+              src={project.data.imgSrc}
+              alt={project.data.title}
+              class="h-[600px] w-full object-cover rounded-2xl mt-8 mb-8"
+            />
+            <div class="text-center text-2xl font-serif text-gray-900 max-w-2xl mb-8">
+              {project.data.description}
+            </div>
+          </div>
+
+          <Content />
+        </div>
+      ) : (
+        <div class="text-2xl text-black mt-20">Project not found.</div>
+      )
+    }
+  </div>
+  <Footer />
+</Layout>

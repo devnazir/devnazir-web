@@ -1,0 +1,51 @@
+---
+year: '2021'
+company: 'Sweden 🇸🇪'
+link: null
+title: 'Powerchap'
+imgSrc: '/powerchap.png'
+description: 'A landing page'
+order: 3
+---
+
+import Section from '@components/common/section';
+import Stack from '@components/common/stack/index.astro';
+
+<Section title="Background">
+  <p>I got a client from Sweden who wanted to create a landing page for their new product.</p>
+</Section>
+
+<Section title="Tech Stack">
+  <Stack
+    stack={[
+      {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+        title: 'JavaScript',
+        subtitle: 'Programming Language',
+        url: 'https://www.javascript.com/',
+      },
+      {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+        title: 'Next.js',
+        subtitle: 'Frontend Framework',
+        url: 'https://nextjs.org/',
+      },
+      {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
+        title: 'Tailwind CSS',
+        subtitle: 'Styling Library',
+        url: 'https://tailwindcss.com/',
+      },
+    ]}
+  />
+</Section>
+
+<Section title="Demo URL">
+  <a
+    href="https://powerchap-next-9m4jbx2iu-devnazir.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-md">View Demo</button>
+  </a>
+</Section>

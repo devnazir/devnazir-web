@@ -1,5 +1,10 @@
+---
+import '@styles/global.css';
+import CustomCursor from '@components/common/cursor/CustomCursor.astro';
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -14,6 +19,7 @@
     />
   </head>
   <body class="bg-black p-2">
+    <CustomCursor />
     <slot />
   </body>
 </html>

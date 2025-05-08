@@ -1,0 +1,41 @@
+---
+year: '2020'
+company: 'Personal Project'
+link: null
+title: 'Kelas.io'
+imgSrc: '/kelas-io.png'
+description: 'First landing page I made'
+order: 10
+---
+
+import Section from '@components/common/section';
+import Stack from '@components/common/stack/index.astro';
+
+<Section title="Background">
+  <p>After learning HTML and CSS, I made this landing page for improving my skills.</p>
+</Section>
+
+<Section title="Tech Stack">
+  <Stack
+    stack={[
+      {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+        title: 'HTML',
+        subtitle: 'Markup Language',
+        url: 'https://www.w3schools.com/html/',
+      },
+      {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+        title: 'CSS',
+        subtitle: 'Styling Language',
+        url: 'https://www.w3schools.com/css/',
+      },
+    ]}
+  />
+</Section>
+
+<Section title="Demo URL">
+  <a href="https://devnazir.github.io/kelas-io/" target="_blank" rel="noopener noreferrer">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-md">View Demo</button>
+  </a>
+</Section>
