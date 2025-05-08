@@ -12,7 +12,7 @@ const CardProject: React.FC<CardProjectProps> = ({ imgSrc, id }) => {
     <a
       href={`/project/${id}`}
       target="_blank"
-      className="rounded-2xl p-2 border border-gray-200 bg-gray-100 h-[500px] cursor-none hover:scale-95 transition-all duration-300 block"
+      className="rounded-2xl p-2 border border-gray-200 bg-gray-100 h-[250px] md:h-[500px] cursor-none hover:scale-95 transition-all duration-300 block"
     >
       {imgSrc && !imgError ? (
         <img

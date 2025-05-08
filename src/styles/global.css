@@ -163,5 +163,5 @@
 }
 
 .section {
-  @apply my-2 px-10 py-20 bg-white rounded-2xl;
+  @apply my-2 md:px-10 px-8 md:py-20 py-10 bg-white rounded-2xl;
 }

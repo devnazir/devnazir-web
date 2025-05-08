@@ -32,7 +32,7 @@ const { Content } = await render(project);
     </div>
     {
       project ? (
-        <div class="w-full max-w-5xl ">
+        <div class="w-full max-w-5xl md:px-0 px-6">
           <div class="flex flex-col items-center">
             <div class="flex items-center gap-4 text-gray-700 text-lg mb-4">
               <span>📅 {project.data.year}</span>
@@ -51,7 +51,7 @@ const { Content } = await render(project);
             <img
               src={project.data.imgSrc}
               alt={project.data.title}
-              class="h-[600px] w-full object-cover rounded-2xl mt-8 mb-8"
+              class="md:h-[600px] h-[300px] w-full object-cover rounded-2xl mt-8 mb-8"
             />
             <div class="text-center text-2xl font-serif text-gray-900 max-w-2xl mb-8">
               {project.data.description}

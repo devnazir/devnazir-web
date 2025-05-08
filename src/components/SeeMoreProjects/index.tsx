@@ -21,7 +21,7 @@ const SeeMoreProjects: React.FC<SeeMoreProjectsProps> = ({ projects }) => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="grid grid-cols-2 gap-4 mt-15">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-15">
         {projects.slice(0, visibleCount).map((project) => (
           <CardProject key={project.id} imgSrc={project.data.imgSrc} id={project.id} />
         ))}
